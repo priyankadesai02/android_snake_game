@@ -14,14 +14,15 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'maven'
 
+plugins {
+  id "org.sonarqube" version "2.7"
+}
+
+
 repositories {
     maven {
           url "http://localhost:8081/nexus/content/groups/public"
     }
-}
-
-plugins {
-  id "org.sonarqube" version "2.7"
 }
 
 allprojects {
