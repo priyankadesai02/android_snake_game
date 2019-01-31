@@ -18,3 +18,13 @@ allprojects {
         jcenter()
     }
 }
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://localhost:8081/repository/maven-releases/") {
+                authentication(userName: "admin", password: "admin123")
+            }
+        }
+    }
+}
