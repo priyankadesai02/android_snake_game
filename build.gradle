@@ -27,7 +27,7 @@ allprojects {
 uploadArchives {
     repositories {
        mavenDeployer {
-             repository(url: "http://localhost:8081/nexus/content/repositories/snapshots") {
+             repository(url: "http://localhost:8081/repository/maven-releases/") {
              authentication(userName: "admin", password: "admin123")
 }
              pom.version = "1.0-SNAPSHOT"
