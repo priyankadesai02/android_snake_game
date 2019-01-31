@@ -9,9 +9,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.0'
-        testCompile "junit:junit:3.8.1"
-        compile "org.jbundle.util:org.jbundle.util.jbackup:2.0.0"
-        compile "net.sf.webtestfixtures:webtestfixtures:2.0.1.3"
     }
 }
 
